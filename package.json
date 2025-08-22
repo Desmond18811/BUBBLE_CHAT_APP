@@ -1,0 +1,22 @@
+{
+  "name": "bubble-chat-app",
+  "version": "1.0.0",
+  "description": "Chat application with React frontend and Node.js backend",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm install && npm start",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client-dev\"",
+    "server-dev": "cd server && npm run dev",
+    "client-dev": "cd client && npm run dev",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["chat", "react", "node", "socket.io"],
+  "author": "Your Name",
+  "license": "ISC"
+}
